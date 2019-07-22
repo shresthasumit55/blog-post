@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+        integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="blog.css">
+    </head>
+
+    <body>
+        <div id="root">
+                <button id="btn-home" role="navigation" >Home</button>
+                <button id="btn-archive" role="navigation">Archive</button>
+                <button id="btn-about" role="navigation">About Us</button>
+            <div id="content">
+                <div id="page-home" role="main">Home Page
+                    <h2>Review of The Office</h2>
+                    <h4>Introduction of the show</h4>
+                    <!--<img src="the_office.jpg" alt="Cover photo of The Office"/>-->
+
+                    <p>The Office (US) debuted in 2005 as an american adaptation of the hit british show of the same name.
+                        </p>
+                    <h4>Strong points: the characters</h4>
+                    <p>abc</p>
+                    <h4>Comparison with other shows</h4>
+                    <p>abc</p>
+
+                    <div id="section-comments">
+
+                        <h4>Post Comments</h4>
+
+                        <label for="name">Name:</label>
+                        <input id="name" class="comments-field" type="text">
+
+                        <label for="email">Email:</label>
+                        <input id="email" class="comments-field" type="text">
+
+                        <label for="comments">Comments:</label>
+                        <input id="comments" class="comments-field" type="text">
+
+                        <button id="btn-search" aria-label="Search">Submit</button>
+                    </div>
+                    <div id="dialog-cmnt" role="alert">
+                        Your comments have been submitted
+                        <button aria-label="Close dialog">Close</button>
+                    </div>
+                     
+
+
+                </div>
+                <div id="page-archive">Archive</div>
+                <div id="page-about">About us</div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="blog.js"></script>
+    </body>
+</html>
