@@ -15,27 +15,32 @@
                 <button id="btn-about" role="navigation" class=tabBtn>About Us</button>
             <div id="content">
                 <div id="page-home" role="main">
-                    <h2>Review of The Office</h2>
-                    <h4>Introduction of the show</h4>
-                    <figure>
-                    <img src="office.jpg" alt="Cover photo of The Office" width=450 height=500 alt="Cast of the show The Office (US)"/>
-                    <figcaption>Cast of The Office (US). From Right: BJ Novak, Rainn Wilson, Steve Carell, John Krasinski and Jenna Fischer</figcaption>    
-                </figure>
+                    <h1>Review of The Office</h2>
+                    <h3>Introduction of the show</h4>
+                    Recently, I watched The Office (US) in Netflix after being recommended by many of my friends. Instantly I became a fan of the show and I am currently
+                    binge watching it for the second time. <br/>
+
+                    <img src="office.jpg" alt="Cover photo of The Office" width=450 height=500 alt="Cast of The Office (US). From Right: 
+                    BJ Novak, Rainn Wilson, Steve Carell, John Krasinski and Jenna Fischer" aria-describedby="imgDescription"/>
+                    <p id="imgDescription">Cast of The Office (US). From Right: BJ Novak, Rainn Wilson, Steve Carell, John Krasinski and Jenna Fischer</p>    
                     <!--https://www.imdb.com/title/tt0386676/mediaviewer/rm1134916608-->
+                    <p>
+                        The image was downloaded from <a href="https://www.imdb.com/title/tt0386676/mediaviewer/rm1134916608">the IMDB page</a>
+                    </p>
+                    
 
-                    <h5> Plot</h5>
+                    <h4> Plot</h5>
 
-                    <p>Recently, I watched The Office (US) in Netflix after being recommended by many of my friends. Instantly I became a fan of the show and I am currently
-                        binge watching it for the second time. The Office (US) debuted in 2005 as an american adaptation of the hit british show of the same name. It features 
+                    <p>The Office (US) debuted in 2005 as an american adaptation of the hit british show of the same name. It features 
                         a documentary style storytelling of the employees in  a Scarnton based paper company called Dunder Mifflin.
                         </p>
                     
-                    <h5>Cast</h5>
+                    <h4>Cast</h5>
                     <p>Steve Carell plays the lead character of Michael Scott, the regional manager of Dunder Mifflin. Rainn Wilson plays the role of quirky sales associate Dwight Schrute.
                         The characters Jim Halpert and Pam Beesly portrayed by John Krasinski and Jenna Fischer provides the central love interest in the show. Rashida Jones and Ed Helms joined
                         the cast in the latter seasons. Except for these main characters, the show features a very strong group of supporting characters. 
                     </p>
-                    <h4>Strength: the writing and the cast</h4>
+                    <h3>Strength: the writing and the cast</h4>
                     <p>The writing of the show is its backbone. Over the course of 9 seasons, many writers were involved in the show : Mindy Kaling, Ricky Gervais, Michael Schur, Greg Daniels, 
                         Ryan Koh, Daniel Chun, Lee Eisenberg, Gene Stupnitsky. The main characters are written very well and the supporting cast blend in the story effortlessly. The tone of 
                         season 1 feels pretty different than other seasons. But personally I enjoy season 1 as much as any other seasons. The writing
@@ -44,9 +49,20 @@
                     </p>
 
                     <p> The cast provides full justice to the writers. Steve Carell is a major reason why the show is a comedic masterpiece. He plays Michael Scott with great depth, with right
-                        amount of emotions, humor and awkwardness. You just know why the office is, in most part, a Michael Scott show when Carell leaves the show.  
+                        amount of emotions, humor and awkwardness. You just know why the office is, in most part, a Michael Scott show when Carell leaves the show. The kind of big actors the show hired
+                        like Will Ferell, James Spader in an attempt to replace Steve Carell shows how big of a presence Carell was to the show. 
+                        
+                        Some of the best episodes which I rate the highest are as follows:
+
+                        <ul>
+                            <li>Dinner Party (Season 4)</li>
+                            <li>Goodbye Michael (Season 7)</li>
+                            <li>The Convict (Season 3)</li>
+                            <li>Stress Relief Part 1 (Season 5)</li>
+                            <li>The Fire (Season 2)</li>
+                        </ul>
                     </p>
-                    <h4>Comparison with other shows</h4>
+                    <h3>Comparison with other shows</h4>
                     <p>abc</p>
 
                     <div id="section-comments">
@@ -64,25 +80,34 @@
                     </div>
 
                 <div class="row">
-                        <label for="comments"><strong>Comments:</strong></label>
-                        <textarea id="comments" rows="4" cols="50"></textarea>
+                        <div id="labelComments"><strong>Comments:</strong></label>
+                        
                     </div>
+                    <textarea id="comments" rows="4" cols="50" aria-labelledby="labelComments"></textarea>
+                    <br>
 
                         <button id="btn-search" aria-label="Search">Submit</button>
                     </div>
-                    <div id="dialog-cmnt" role="alert" class="dialog">
+                    <div id="dialog-cmnt" role="alert" class="dialog" aria-labelledby='dialog-title'>
+                        <div class="modal-content">
+                        <h2 id='dialog-title'>Successful Submission</h2>
                         <div class="dialog-content">
                         Your comments have been submitted
                         </div>
                         <button aria-label="Close dialog" id="btn-close">Close</button>
                     </div>
+                    </div>
                      
 
 
                 </div>
+            </div>
                 <div id="page-archive">
-                    <h2>Archive</h2></div>
-                <div id="page-about"><h2>About Us</h2></div>
+                    <h2>Archive</h2>
+                </div>
+                <div id="page-about">
+                    <h2>About Us</h2>
+                </div>
             </div>
         </div>
 

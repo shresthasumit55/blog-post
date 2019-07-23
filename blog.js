@@ -2,7 +2,6 @@ $("document").ready(function () {
     $("#page-home").show();
     $("#page-archive").hide();
     $("#page-about").hide();
-    $("#dialog-cmnt").hide();
 })
 
 $("#btn-home").click(function () {
@@ -22,8 +21,8 @@ $("#btn-about").click(function () {
 })
 
 $("#btn-search").click(function () {
-    $("#dialog-cmnt").show();
+    $("#dialog-cmnt").css("display", "block");
 })
 $("#btn-close").click(function () {
-    $("#dialog-cmnt").hide();
+    $("#dialog-cmnt").css("display", "none");
 })
