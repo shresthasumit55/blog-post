@@ -1,4 +1,11 @@
+#root{width:1000px; margin-bottom: 30px}
+.row{margin-bottom: 10px}
 #comments-field{margin-bottom:5px}
-.hidden {
-    display:none;
+button{width: 130px; height: 50px; margin-left: 3px; margin-top: 2px; border:1px solid green}
+#section-comments {
+  border-style: solid;
   }
+.tabBtn{border:none; width:155px; margin-left: -4px;    margin-right: -1px; }
+.tabBtn:hover {     background-color: brown;  }
+#btn-search{height:30px; margin-bottom:20px}
+

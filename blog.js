@@ -24,3 +24,6 @@ $("#btn-about").click(function () {
 $("#btn-search").click(function () {
     $("#dialog-cmnt").show();
 })
+$("#btn-close").click(function () {
+    $("#dialog-cmnt").hide();
+})

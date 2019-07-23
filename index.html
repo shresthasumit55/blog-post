@@ -7,47 +7,79 @@
 
     <body>
         <div id="root">
-                <button id="btn-home" role="navigation" >Home</button>
-                <button id="btn-archive" role="navigation">Archive</button>
-                <button id="btn-about" role="navigation">About Us</button>
+                <button id="btn-home" role="navigation" class=tabBtn>Home</button>
+                <button id="btn-archive" role="navigation" class=tabBtn>Archive</button>
+                <button id="btn-about" role="navigation" class=tabBtn>About Us</button>
             <div id="content">
-                <div id="page-home" role="main">Home Page
+                <div id="page-home" role="main">
                     <h2>Review of The Office</h2>
                     <h4>Introduction of the show</h4>
-                    <!--<img src="the_office.jpg" alt="Cover photo of The Office"/>-->
+                    <figure>
+                    <img src="office.jpg" alt="Cover photo of The Office" width=450 height=500 alt="Cast of the show The Office (US)"/>
+                    <figcaption>Cast of The Office (US). From Right: BJ Novak, Rainn Wilson, Steve Carell, John Krasinski and Jenna Fischer</figcaption>    
+                </figure>
+                    <!--https://www.imdb.com/title/tt0386676/mediaviewer/rm1134916608-->
 
-                    <p>The Office (US) debuted in 2005 as an american adaptation of the hit british show of the same name.
+                    <h5> Plot</h5>
+
+                    <p>Recently, I watched The Office (US) in Netflix after being recommended by many of my friends. Instantly I became a fan of the show and I am currently
+                        binge watching it for the second time. The Office (US) debuted in 2005 as an american adaptation of the hit british show of the same name. It features 
+                        a documentary style storytelling of the employees in  a Scarnton based paper company called Dunder Mifflin.
                         </p>
-                    <h4>Strong points: the characters</h4>
-                    <p>abc</p>
+                    
+                    <h5>Cast</h5>
+                    <p>Steve Carell plays the lead character of Michael Scott, the regional manager of Dunder Mifflin. Rainn Wilson plays the role of quirky sales associate Dwight Schrute.
+                        The characters Jim Halpert and Pam Beesly portrayed by John Krasinski and Jenna Fischer provides the central love interest in the show. Rashida Jones and Ed Helms joined
+                        the cast in the latter seasons. Except for these main characters, the show features a very strong group of supporting characters. 
+                    </p>
+                    <h4>Strength: the writing and the cast</h4>
+                    <p>The writing of the show is its backbone. Over the course of 9 seasons, many writers were involved in the show : Mindy Kaling, Ricky Gervais, Michael Schur, Greg Daniels, 
+                        Ryan Koh, Daniel Chun, Lee Eisenberg, Gene Stupnitsky. The main characters are written very well and the supporting cast blend in the story effortlessly. The tone of 
+                        season 1 feels pretty different than other seasons. But personally I enjoy season 1 as much as any other seasons. The writing
+                        has been consistent over the seasons especially from Seasons 1 to 7. After the departure of Stevel Carell during Season 7, the show's quality did dip a bit but I really
+                        enjoyed how the story progressed after then end of Michael Scott's story and towards the finale.
+                    </p>
+
+                    <p> The cast provides full justice to the writers. Steve Carell is a major reason why the show is a comedic masterpiece. He plays Michael Scott with great depth, with right
+                        amount of emotions, humor and awkwardness. You just know why the office is, in most part, a Michael Scott show when Carell leaves the show.  
+                    </p>
                     <h4>Comparison with other shows</h4>
                     <p>abc</p>
 
                     <div id="section-comments">
 
-                        <h4>Post Comments</h4>
+                        <h3>Post Comments</h3>
 
-                        <label for="name">Name:</label>
+                        <div class="row">
+                        <label for="name"><strong>Name:</strong></label>
                         <input id="name" class="comments-field" type="text">
+                    </div>
 
-                        <label for="email">Email:</label>
+                    <div class="row">
+                        <label for="email"><strong>Email:</strong></label>
                         <input id="email" class="comments-field" type="text">
+                    </div>
 
-                        <label for="comments">Comments:</label>
-                        <input id="comments" class="comments-field" type="text">
+                <div class="row">
+                        <label for="comments"><strong>Comments:</strong></label>
+                        <textarea id="comments" rows="4" cols="50"></textarea>
+                    </div>
 
                         <button id="btn-search" aria-label="Search">Submit</button>
                     </div>
-                    <div id="dialog-cmnt" role="alert">
+                    <div id="dialog-cmnt" role="alert" class="dialog">
+                        <div class="dialog-content">
                         Your comments have been submitted
-                        <button aria-label="Close dialog">Close</button>
+                        </div>
+                        <button aria-label="Close dialog" id="btn-close">Close</button>
                     </div>
                      
 
 
                 </div>
-                <div id="page-archive">Archive</div>
-                <div id="page-about">About us</div>
+                <div id="page-archive">
+                    <h2>Archive</h2></div>
+                <div id="page-about"><h2>About Us</h2></div>
             </div>
         </div>
 
