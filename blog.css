@@ -39,4 +39,19 @@ button{width: 130px; height: 50px; margin-left: 3px; margin-top: 2px; border:1px
 input[type=text]:focus {
   border: 3px solid #555;
 }
+table{
+  margin:20px;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th {
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
 
